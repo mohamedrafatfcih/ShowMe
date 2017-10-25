@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.5.1)
+  - FoursquareAPIClient (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire`)
+  - FoursquareAPIClient (from `https://github.com/koogawa/FoursquareAPIClient`)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire
+  FoursquareAPIClient:
+    :git: https://github.com/koogawa/FoursquareAPIClient
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 6d9b4885fbd7837861c5216d2ae4a1131e599f30
+    :git: https://github.com/Alamofire/Alamofire
+  FoursquareAPIClient:
+    :commit: 8845802d2f0d5f65891f81c16a689e7c6940ac2b
+    :git: https://github.com/koogawa/FoursquareAPIClient
+
+SPEC CHECKSUMS:
+  Alamofire: 0224236301daac8c6578172706304b66b48236b5
+  FoursquareAPIClient: 4e267812ddc5180e233175ef4839fbe587be9830
+
+PODFILE CHECKSUM: ec2ca30ff58e4d6f719da479404f1aa20753bc0e
+
+COCOAPODS: 1.3.1

@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7816EBEA1FA0DD0100E1FC8D /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7816EBE91FA0DD0000E1FC8D /* DetailVC.swift */; };
 		78AC73401F9F5FB500163EAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC733F1F9F5FB500163EAD /* AppDelegate.swift */; };
-		78AC73421F9F5FB500163EAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC73411F9F5FB500163EAD /* ViewController.swift */; };
 		78AC73451F9F5FB600163EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AC73431F9F5FB600163EAD /* Main.storyboard */; };
 		78AC73471F9F5FB600163EAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78AC73461F9F5FB600163EAD /* Assets.xcassets */; };
 		78AC734A1F9F5FB600163EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AC73481F9F5FB600163EAD /* LaunchScreen.storyboard */; };
+		78AC73551F9F69FC00163EAD /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC73541F9F69FC00163EAD /* PlaceCell.swift */; };
+		78AC73591F9F6E1D00163EAD /* PlaceTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC73581F9F6E1D00163EAD /* PlaceTableVC.swift */; };
+		78AC735B1F9F755D00163EAD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC735A1F9F755D00163EAD /* Place.swift */; };
+		78AC735D1F9FC4E000163EAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC735C1F9FC4E000163EAD /* Constants.swift */; };
+		E9F0975DE53D878C138497C5 /* Pods_FourSquareTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4D52455DAC0CC3A34E8B48 /* Pods_FourSquareTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3617DC45B0A0117E778F8167 /* Pods-FourSquareTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSquareTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FourSquareTask/Pods-FourSquareTask.debug.xcconfig"; sourceTree = "<group>"; };
+		7816EBE91FA0DD0000E1FC8D /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		78AC733C1F9F5FB500163EAD /* FourSquareTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourSquareTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AC733F1F9F5FB500163EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		78AC73411F9F5FB500163EAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78AC73441F9F5FB600163EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78AC73461F9F5FB600163EAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78AC73491F9F5FB600163EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78AC734B1F9F5FB600163EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78AC73541F9F69FC00163EAD /* PlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		78AC73581F9F6E1D00163EAD /* PlaceTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableVC.swift; sourceTree = "<group>"; };
+		78AC735A1F9F755D00163EAD /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		78AC735C1F9FC4E000163EAD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7D4FD6763586DF0D94F44F98 /* Pods-FourSquareTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSquareTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-FourSquareTask/Pods-FourSquareTask.release.xcconfig"; sourceTree = "<group>"; };
+		8D4D52455DAC0CC3A34E8B48 /* Pods_FourSquareTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FourSquareTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F0975DE53D878C138497C5 /* Pods_FourSquareTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E8FDF4AFADEE23B434D2B4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D4D52455DAC0CC3A34E8B48 /* Pods_FourSquareTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41A5DA8C1AE7CE8A6D6DDAD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3617DC45B0A0117E778F8167 /* Pods-FourSquareTask.debug.xcconfig */,
+				7D4FD6763586DF0D94F44F98 /* Pods-FourSquareTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		78AC73331F9F5FB500163EAD = {
 			isa = PBXGroup;
 			children = (
 				78AC733E1F9F5FB500163EAD /* FourSquareTask */,
 				78AC733D1F9F5FB500163EAD /* Products */,
+				41A5DA8C1AE7CE8A6D6DDAD0 /* Pods */,
+				0E8FDF4AFADEE23B434D2B4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,42 @@
 		78AC733E1F9F5FB500163EAD /* FourSquareTask */ = {
 			isa = PBXGroup;
 			children = (
+				78AC73531F9F699000163EAD /* Controller */,
+				78AC73521F9F698800163EAD /* Model */,
+				78AC73511F9F694800163EAD /* View */,
 				78AC733F1F9F5FB500163EAD /* AppDelegate.swift */,
-				78AC73411F9F5FB500163EAD /* ViewController.swift */,
 				78AC73431F9F5FB600163EAD /* Main.storyboard */,
 				78AC73461F9F5FB600163EAD /* Assets.xcassets */,
 				78AC73481F9F5FB600163EAD /* LaunchScreen.storyboard */,
 				78AC734B1F9F5FB600163EAD /* Info.plist */,
 			);
 			path = FourSquareTask;
+			sourceTree = "<group>";
+		};
+		78AC73511F9F694800163EAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78AC73541F9F69FC00163EAD /* PlaceCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		78AC73521F9F698800163EAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78AC735A1F9F755D00163EAD /* Place.swift */,
+				78AC735C1F9FC4E000163EAD /* Constants.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		78AC73531F9F699000163EAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78AC73581F9F6E1D00163EAD /* PlaceTableVC.swift */,
+				7816EBE91FA0DD0000E1FC8D /* DetailVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78AC734E1F9F5FB600163EAD /* Build configuration list for PBXNativeTarget "FourSquareTask" */;
 			buildPhases = (
+				F8DEE62878BAAC5C2A9F9E36 /* [CP] Check Pods Manifest.lock */,
 				78AC73381F9F5FB500163EAD /* Sources */,
 				78AC73391F9F5FB500163EAD /* Frameworks */,
 				78AC733A1F9F5FB500163EAD /* Resources */,
+				4AE46DA501AF421D6E6F7EE1 /* [CP] Embed Pods Frameworks */,
+				1F1F8558EBAB0732EB87EC23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +194,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F1F8558EBAB0732EB87EC23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FourSquareTask/Pods-FourSquareTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AE46DA501AF421D6E6F7EE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FourSquareTask/Pods-FourSquareTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FoursquareAPIClient/FoursquareAPIClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoursquareAPIClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FourSquareTask/Pods-FourSquareTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8DEE62878BAAC5C2A9F9E36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FourSquareTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		78AC73381F9F5FB500163EAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78AC73421F9F5FB500163EAD /* ViewController.swift in Sources */,
+				78AC735D1F9FC4E000163EAD /* Constants.swift in Sources */,
 				78AC73401F9F5FB500163EAD /* AppDelegate.swift in Sources */,
+				78AC73551F9F69FC00163EAD /* PlaceCell.swift in Sources */,
+				78AC73591F9F6E1D00163EAD /* PlaceTableVC.swift in Sources */,
+				78AC735B1F9F755D00163EAD /* Place.swift in Sources */,
+				7816EBEA1FA0DD0100E1FC8D /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +383,7 @@
 		};
 		78AC734F1F9F5FB600163EAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3617DC45B0A0117E778F8167 /* Pods-FourSquareTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FourSquareTask/Info.plist;
@@ -272,6 +396,7 @@
 		};
 		78AC73501F9F5FB600163EAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4FD6763586DF0D94F44F98 /* Pods-FourSquareTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FourSquareTask/Info.plist;
@@ -301,6 +426,7 @@
 				78AC73501F9F5FB600163EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
