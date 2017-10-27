@@ -8,10 +8,14 @@
 
 import UIKit
 import FoursquareAPIClient
+import CoreLocation
+
 typealias DownloadComplete = () -> ()
 
-class PlaceTableVC: UITableViewController {
+class PlaceTableVC: UITableViewController, CLLocationManagerDelegate {
     
+    var locationManager:CLLocationManager!
+    var locationIsReady = false
     @IBOutlet var placeTbl: UITableView!
     var places = [Place]()
     var selectedPlace: Place!
@@ -24,10 +28,6 @@ class PlaceTableVC: UITableViewController {
         placeTbl.delegate = self
         placeTbl.dataSource = self
         
-        exploreVenues {
-            self.completePlaceDetail()
-        }
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -35,9 +35,46 @@ class PlaceTableVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
        // print(client)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        determineMyCurrentLocation()
+    }
+    
+    func determineMyCurrentLocation() {
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.startUpdatingLocation()
+            //locationManager.startUpdatingHeading()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    {
+        let location = locations[0]
+        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+            manager.stopUpdatingLocation()
+        Location.sharedInstance.latitude = myLocation.latitude
+        Location.sharedInstance.longitude = myLocation.longitude
+        print("Found Location")
+        print(Location.sharedInstance.latitude, Location.sharedInstance.longitude)
+        // getting Places Info
+        exploreVenues {
+            self.completePlaceDetail()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
+    {
+        print("Error \(error)")
+    }
+
     
     func exploreVenues(completed: @escaping DownloadComplete){
-        let parameter: [String: String] = ["ll": "30.7865,31.0004","limit": "30"]
+        let parameter: [String: String] = ["ll": "\(Location.sharedInstance.latitude!), \(Location.sharedInstance.longitude!)","limit": "30"]
         client.request(path: "venues/explore", parameter: parameter) { result in
             
             switch result {

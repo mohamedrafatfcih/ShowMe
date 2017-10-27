@@ -11,16 +11,44 @@ import UIKit
 class DetailVC: UIViewController {
     
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var addressLbl: UILabel!
+    @IBOutlet weak var distanceLbl: UILabel!
+    @IBOutlet weak var phoneLbl: UILabel!
+    @IBOutlet weak var isOpenLbl: UILabel!
+    @IBOutlet weak var hoursLbl: UILabel!
+    @IBOutlet weak var priceLbl: UILabel!
+    @IBOutlet weak var likesLbl: UILabel!
+    @IBOutlet weak var rateLbl: UILabel!
+    @IBOutlet weak var categoryLbl: UILabel!
+    @IBOutlet weak var checkinsLbl: UILabel!
+    @IBOutlet weak var usersCountLbl: UILabel!
+    
     
     var place: Place!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        name.text = place.name
-        
+        completePlaceDetail()
     }
 
-    
+    func completePlaceDetail(){
+        name.text = place.name
+        addressLbl.text = "Address: \(place.address)"
+        distanceLbl.text = "Distance: \(place.distance)m"
+        phoneLbl.text = "Phone: \(place.phone)"
+        categoryLbl.text = "Category: \(place.category)"
+        priceLbl.text = "Price: \(place.price)"
+        hoursLbl.text = "Hours: \(place.hours)"
+        likesLbl.text = "Likes: \(place.likesCount)"
+        if place.isOpen {
+            isOpenLbl.text = "State: Open"
+        }else{
+            isOpenLbl.text = "State: Closed"
+        }
+        checkinsLbl.text = "Checkins: \(place.checkinsCount)"
+        usersCountLbl.text = "Users: \(place.usersCount)"
+        rateLbl.text = "Rate: \(place.rate)"
+    }
 
     /*
     // MARK: - Navigation

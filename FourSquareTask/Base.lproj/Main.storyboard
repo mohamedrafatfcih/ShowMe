@@ -23,11 +23,11 @@
                                 <rect key="frame" x="0.0" y="56" width="320" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DsK-eg-PlT" id="tVp-qN-KDA">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="76.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="76"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKF-vD-sbo">
-                                            <rect key="frame" x="72" y="17" width="39" height="19"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKF-vD-sbo">
+                                            <rect key="frame" x="72" y="17" width="197" height="19"/>
                                             <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="16"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -49,6 +49,7 @@
                                     <constraints>
                                         <constraint firstItem="sKF-vD-sbo" firstAttribute="top" secondItem="tVp-qN-KDA" secondAttribute="top" constant="17" id="HU4-6O-zxk"/>
                                         <constraint firstItem="sKF-vD-sbo" firstAttribute="leading" secondItem="Lal-MA-hrz" secondAttribute="trailing" constant="19" id="SLJ-Op-knA"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="sKF-vD-sbo" secondAttribute="trailing" constant="10" id="Uoa-9e-w72"/>
                                         <constraint firstItem="Lal-MA-hrz" firstAttribute="top" secondItem="tVp-qN-KDA" secondAttribute="top" constant="10" id="W2c-Hy-yqY"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="tfi-kT-rhh" secondAttribute="trailing" constant="15" id="l2A-pT-hZ0"/>
                                         <constraint firstItem="Lal-MA-hrz" firstAttribute="leading" secondItem="tVp-qN-KDA" secondAttribute="leading" constant="20" id="nOM-tG-yLe"/>
@@ -97,7 +98,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="v4a-M8-a7D">
-                                <rect key="frame" x="20" y="133" width="280" height="280"/>
+                                <rect key="frame" x="20" y="133" width="280" height="392.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFd-gz-BvA">
                                         <rect key="frame" x="108.5" y="0.0" width="63.5" height="17.5"/>
@@ -147,6 +148,24 @@
                                         <color key="textColor" white="0.53987630208333337" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QZ-gh-E5E">
+                                        <rect key="frame" x="104" y="300" width="72.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                        <color key="textColor" white="0.53987630210000004" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkins Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg0-am-GK4">
+                                        <rect key="frame" x="77" y="337.5" width="126.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                        <color key="textColor" white="0.53987630210000004" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Users Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtc-Ka-2ww">
+                                        <rect key="frame" x="90.5" y="375" width="99.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                        <color key="textColor" white="0.53987630210000004" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -161,7 +180,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addressLbl" destination="BFd-gz-BvA" id="ZUj-Am-dWT"/>
+                        <outlet property="categoryLbl" destination="4QZ-gh-E5E" id="lWi-Nw-KlR"/>
+                        <outlet property="checkinsLbl" destination="Hg0-am-GK4" id="fbC-Cu-7uE"/>
+                        <outlet property="distanceLbl" destination="DXI-aQ-r5D" id="jKu-Cg-S1l"/>
+                        <outlet property="hoursLbl" destination="dE8-Mx-eUJ" id="wWq-3m-Xdh"/>
+                        <outlet property="isOpenLbl" destination="8l9-06-uLc" id="Ylh-uF-3aR"/>
+                        <outlet property="likesLbl" destination="jm2-8c-6sv" id="QQL-0O-K2S"/>
                         <outlet property="name" destination="bf7-YQ-oCN" id="SlH-ds-Zue"/>
+                        <outlet property="phoneLbl" destination="1MW-7R-NXm" id="VNL-o5-Bfa"/>
+                        <outlet property="priceLbl" destination="JOw-oR-gqw" id="1yt-Mw-Ba6"/>
+                        <outlet property="rateLbl" destination="AtX-JG-rqv" id="2gW-Bi-vqz"/>
+                        <outlet property="usersCountLbl" destination="Rtc-Ka-2ww" id="bc3-Nr-WEP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lw4-tQ-bC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
