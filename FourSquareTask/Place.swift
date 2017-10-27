@@ -24,16 +24,6 @@ class Place {
     private var _isOpen: Bool!
     private var _hours: String!
     
-    /*init(id: String, name: String, phone:String, address: String, distance: Double, category: String) {
-        self._id = id
-        self._name = name
-        self._phone = phone
-        self._address = address
-        self._distance = distance
-        self._category = category
-        
-    }*/
-    
     init(placeDetailDic: Dictionary<String,AnyObject>) {
         if let venue = placeDetailDic["venue"] as? Dictionary<String, AnyObject> {
             if let veneuId = venue["id"] as? String {

@@ -1,8 +1,8 @@
 //
 //  Location.swift
-//  WetherApp
+//  FourSquareTask
 //
-//  Created by RANDOM on 10/17/17.
+//  Created by RANDOM on 10/24/17.
 //  Copyright © 2017 RANDOM. All rights reserved.
 //
 

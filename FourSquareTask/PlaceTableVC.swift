@@ -27,13 +27,6 @@ class PlaceTableVC: UITableViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         placeTbl.delegate = self
         placeTbl.dataSource = self
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-       // print(client)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -59,7 +52,6 @@ class PlaceTableVC: UITableViewController, CLLocationManagerDelegate {
             manager.stopUpdatingLocation()
         Location.sharedInstance.latitude = myLocation.latitude
         Location.sharedInstance.longitude = myLocation.longitude
-        print("Found Location")
         print(Location.sharedInstance.latitude, Location.sharedInstance.longitude)
         // getting Places Info
         exploreVenues {
@@ -74,7 +66,7 @@ class PlaceTableVC: UITableViewController, CLLocationManagerDelegate {
 
     
     func exploreVenues(completed: @escaping DownloadComplete){
-        let parameter: [String: String] = ["ll": "\(Location.sharedInstance.latitude!), \(Location.sharedInstance.longitude!)","limit": "30"]
+        let parameter: [String: String] = ["ll": "\(Location.sharedInstance.latitude!), \(Location.sharedInstance.longitude!)","limit": "20"]
         client.request(path: "venues/explore", parameter: parameter) { result in
             
             switch result {
