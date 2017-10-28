@@ -134,8 +134,7 @@ class PlaceTableVC: UITableViewController, CLLocationManagerDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedPlace = places[indexPath.row]
-        performSegue(withIdentifier: "detailSegue", sender: Any?.self)
+        performSegue(withIdentifier: "detailSegue", sender: places[indexPath.row])
     }
     
     /*
@@ -180,7 +179,9 @@ class PlaceTableVC: UITableViewController, CLLocationManagerDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "detailSegue" {
                 let detailVC = segue.destination as! DetailVC
-                detailVC.place = selectedPlace
+                if let place = sender as? Place {
+                    detailVC.place = place
+                }
             }
         
         }
